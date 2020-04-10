@@ -10,21 +10,43 @@
 
     <body>
         <header>
-            <h1 class="headline">
+            <h1 id="headline">
                 <a>じぇむあんてな</a>
             </h1>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a>Home</a>
-                </li>
-                <li class="nav-list-item">About</li>
-                <li class="nav-list-item">Topic</li>
-            </ul>
+            <div id="nav-container">
+                <button type="button" class="nav-button">海外の反応</button>
+                <button type="button" class="nav-button">政治・皇室</button>
+                <button type="button" class="nav-button">経済・投資</button>
+                <button type="button" class="nav-button">海外の反応</button>
+                <button type="button" class="nav-button">趣味・ゲーム</button>
+            </div>
         </header>
 
-        <div class="boxsoto">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <h2>最新の記事</h2>
+            </li>
+            <li class="nav-list-item">
+                <h2>人気の記事</h2>
+            </li>
+            <li class="nav-list-item">
+                <h2>人気のブログ</h2>
+            </li>
+        </ul>
+        <div class="contentBox">
             <ul id="feedList"></ul>
         </div>
+
+        <footer>
+            <ul class="nav-list">
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">お問い合わせ</li>
+                <li class="nav-list-item">サイト情報</li>
+                <li class="nav-list-item">Twitter</li>
+                <li class="nav-list-item">RSS</li>
+            </ul>
+            <h5 id="copyright">Copyright2020 じぇむあんてな .All Rights Reserved</h5>
+        </footer>
 
     </body>
 </html>

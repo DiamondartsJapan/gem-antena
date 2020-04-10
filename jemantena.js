@@ -42,7 +42,7 @@ $(document).ajaxStop(function(){
     sortContentByTime(rssContentList);
     rssContentList.forEach(content => {
         // コンテンツを表示
-        $('<div class="boxdef"><li></li></div>').html('<a href="'+content.url+'">'+content.title+'</a><br />'+content.siteName).appendTo('ul#feedList');
+        $('<div class="feed"><li></li></div>').html('<a href="'+content.url+'">'+content.title+'</a><br />'+content.siteName).appendTo('ul#feedList');
     });
 });
 
@@ -55,7 +55,7 @@ function sortContentByTime(contentList){
 
 // じぇむあんてなのRSS
 const siteList = [
-    'http://34.97.37.222/gem-antena/jem-feed-creator/jem.xml'
+    'http://34.97.37.222/gem-antena/gem-antena-master/jem-feed-creator/jem.xml'
 ];
 
 // RSSから取得したコンテンツ保存用
