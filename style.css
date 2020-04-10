@@ -1,66 +1,92 @@
-.boxdef {
-	width:60%;
-    border-radius: 20px;
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #00BCD4;
-    background: white;
-    border-top: solid 6px #9BF9CC;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*‰e*/
-    margin: auto;
-    margin-top:10px;
-	height:60px;
-}
-.boxdef p {
-    margin: 0; 
-    padding: 0;
+/*body*/
+body {
+    background-color: lightgreen;
+    margin: 0;
 }
 
-a:link { color: gray; }
-a:visited { color: gray; }
-
-* {
-  margin:0; padding:0;
-}
-
-body > header {
-  margin-bottom: 40px;
-}
-header {
-  background-color:#2E8B57;
-  color :white;
-  width: 100%;
-  padding: 15px 0;
-  margin: 0 auto;
-  text-align: center;
-}
-header .headline{
-  font-size: 32px;
-}
 .nav-list {
-  text-align: center;
-  padding: 10px 0;
-  margin: 0 auto;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    list-style: none;
 }
 .nav-list-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
+    display: inline-block;
 }
 
-.boxsoto {
-	margin-top:20px;
-	width:65%;
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    font-weight: bold;
-    color: #6091d3;
-    background: #FFF;
-    border: solid 3px #1BFF4A;
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+/*header*/
+header {
+    background-color: forestgreen;
+    width: 100%;
+    margin: 0 0;
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+#headline{
+    font-size: 32px;
+}
+
+#nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-button {
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-size: large;
+}
+
+/*content*/
+.contentBox {
+    background: white;
+    width: 65%;
+    margin: 0 auto;
+    border: solid 3px lime;
     border-radius: 10px;
-    margin: auto;
+    color: cornflowerblue;
+    font-weight: bold;
 }
 
-body {
-	background-color:#CEF9DC;
+#feedList {
+    margin: 0;
+}
+
+.feed {
+    background: white;
+    width:60%;
+    margin: 10px auto;
+    padding: 0.5em 1em;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    border-top: solid 6px #9BF9CC;
+    border-radius: 20px;
+    color: #00BCD4;
+}
+
+/*footer*/
+footer {
+    background-color:#2E8B57;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 15px 0;
+    color :white;
+    text-align: center;
 }
